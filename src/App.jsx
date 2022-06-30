@@ -1,5 +1,10 @@
+import './global.css'
+import styles from './App.module.css'
+
 export function App() {
   return (
-    <h1>Olá</h1>  
+    <div className={styles.container}>
+
+    </div>
   )
 }
