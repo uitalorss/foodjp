@@ -1,0 +1,35 @@
+
+.intro{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 5rem;
+}
+
+.content{
+  display: grid;
+  align-content: center;
+  gap: 1.5rem 0;
+}
+
+.content p{
+  width: 80%;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.button{
+  padding: 1rem;
+  width: 40%;
+  text-align: center;
+  font-weight: 600;
+  background: var(--red);
+  color: var(--white);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.image{
+  display: grid;
+  justify-content: flex-end;
+}
+
