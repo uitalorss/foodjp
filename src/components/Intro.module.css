@@ -1,8 +1,9 @@
 
 .intro{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 5rem;
+  grid-template-columns: 1.3fr 1fr;
+  margin: 5rem 0;
+  gap: 5rem;
 }
 
 .content{
@@ -31,5 +32,18 @@
 .image{
   display: grid;
   justify-content: flex-end;
+}
+
+.link{
+  color: var(--red);
+  font-weight: 500;
+}
+
+.recipes{
+  
+}
+
+.recipes h2{
+  text-align: center;
 }
 
