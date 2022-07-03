@@ -1,4 +1,22 @@
 .recipeItem{
   list-style: none;
   background: var(--white-200);
+  display: grid;
+  justify-content: center;
+  margin-top: 160px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.recipeItem img{
+  margin: -7rem auto 2rem auto;
+}
+
+.recipeItem p{
+  text-align: center;
+}
+
+.recipeItem h3{
+  text-align: center;
+  margin: 1rem 0;
 }
