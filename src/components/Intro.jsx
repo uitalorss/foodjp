@@ -6,6 +6,7 @@ import recipe2 from '../assets/prato-2.png';
 import recipe3 from '../assets/prato-3.png';
 import profile1 from '../assets/img-profile-1.png';
 import profile2 from '../assets/img-profile-2.png';
+import location from '../assets/mapa-rio.png'
 import { Recipes } from './Recipes';
 import { Comments } from './Comments';
 export function Intro(){
@@ -80,6 +81,10 @@ export function Intro(){
         return <Comments  comment={comment}/>
       })}
       </ul>
+    </div>
+    <div className={styles.location}>
+      <h2>Localização</h2>
+      <img src={location} alt="" />
     </div>
     </>
   )
