@@ -1,0 +1,12 @@
+.commentItem{
+  padding: 2.5rem;
+  background: var(--white-200);
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  border-radius: 16px;
+}
+
+.commentItem img{
+  margin-bottom: .25rem;
+}

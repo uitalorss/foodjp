@@ -1,10 +1,13 @@
 import styles from './Intro.module.css';
 import sushi from '../assets/sushi.png';
 import prato from '../assets/img-prato.png';
-import recipe1 from '../assets/prato-1.png'
-import recipe2 from '../assets/prato-2.png'
-import recipe3 from '../assets/prato-3.png'
+import recipe1 from '../assets/prato-1.png';
+import recipe2 from '../assets/prato-2.png';
+import recipe3 from '../assets/prato-3.png';
+import profile1 from '../assets/img-profile-1.png';
+import profile2 from '../assets/img-profile-2.png';
 import { Recipes } from './Recipes';
+import { Comments } from './Comments';
 export function Intro(){
   const recipes = [
     {
@@ -25,6 +28,21 @@ export function Intro(){
       value: 30,
       image: recipe3
     }
+  ]
+
+  const comments = [
+    {
+      image: profile1,
+      user: 'Daniele Almeida',
+      comment: 'Ótimo serviço! Encantada com a qualidade dos pratos.',
+      rating: 5
+    },
+    {
+      image: profile2,
+      user: 'Ricardo França',
+      comment: 'Não é apenas a comida excelente, o serviço torna a experiência especial.',
+      rating: 5
+    },
   ]
 
   return(
@@ -53,6 +71,14 @@ export function Intro(){
       {recipes.map(recipe => {
           return <Recipes recipe={recipe}/>
         })}
+      </ul>
+    </div>
+    <div className={styles.comments}>
+      <h2>Comentários</h2>
+      <ul className={styles.commentslist}>
+      {comments.map(comment => {
+        return <Comments  comment={comment}/>
+      })}
       </ul>
     </div>
     </>
