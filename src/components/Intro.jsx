@@ -1,7 +1,32 @@
 import styles from './Intro.module.css';
 import sushi from '../assets/sushi.png';
 import prato from '../assets/img-prato.png';
+import recipe1 from '../assets/prato-1.png'
+import recipe2 from '../assets/prato-2.png'
+import recipe3 from '../assets/prato-3.png'
+import { Recipes } from './Recipes';
 export function Intro(){
+  const recipes = [
+    {
+      name: 'Ramen de Frango',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      value: 30,
+      image: recipe1
+    },
+    {
+      name: 'Ramen Apimentado',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      value: 30,
+      image: recipe2
+    },
+    {
+      name: 'Ramen Tradicional',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      value: 30,
+      image: recipe3
+    }
+  ]
+
   return(
     <>
     <div className={styles.intro}>
@@ -24,6 +49,11 @@ export function Intro(){
     </div>
     <div className={styles.recipes}>
       <h2>Mais Populares</h2>
+      <ul className={styles.recipesList}>
+      {recipes.map(recipe => {
+          return <Recipes recipe={recipe}/>
+        })}
+      </ul>
     </div>
     </>
   )

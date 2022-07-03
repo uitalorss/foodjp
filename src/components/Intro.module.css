@@ -39,8 +39,11 @@
   font-weight: 500;
 }
 
-.recipes{
-  
+.recipesList{
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 5rem;
 }
 
 .recipes h2{
