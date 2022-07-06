@@ -9,6 +9,7 @@ import profile2 from '../assets/img-profile-2.png';
 import location from '../assets/mapa-rio.png'
 import { Recipes } from './Recipes';
 import { Comments } from './Comments';
+import { MapPin } from 'phosphor-react';
 export function Intro(){
   const recipes = [
     {
@@ -86,6 +87,13 @@ export function Intro(){
       <h2>Localização</h2>
       <img src={location} alt="" />
     </div>
+    <form className={styles.form} action="">
+      <div className={styles.input}>
+        <MapPin size={32} color="#DA2535"/>
+        <input type="text"  placeholder='Localização para entrega' />
+        <button>Buscar</button>
+      </div>
+    </form>
     </>
   )
 }

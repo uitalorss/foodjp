@@ -63,3 +63,38 @@
   width: 100%;
 }
 
+.form{
+  margin: 3.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.input{
+  border-radius: 10px 0 0 10px;
+  border-left:1px solid var(--black) ;
+  border-top: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+  padding-left: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.form input{
+  padding: 1.25rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: 0;
+  outline: none;
+  width: 630px;
+}
+
+.form button{
+  padding: 1.25rem 3.25rem;
+  background: var(--red);
+  color: var(--white);
+  cursor: pointer;
+  border: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 0 10px 10px 0;
+}
